@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | GCA Coaching Center</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">GCA</span><span><strong>GCA COACHING CENTER</strong><small>INQUIRY ADMIN</small></span></a><a class="call-link" href="index.html">← Public form</a></header>
+<main class="admin-wrap">
+  <div class="admin-head"><div><span class="eyebrow blue">LOCAL ADMIN VIEW</span><h1>Admission Inquiries</h1><p style="color:#68758d;margin:0">View inquiry backups saved in this browser.</p></div><div class="admin-actions"><button class="small-button" id="exportBtn">Export CSV</button><button class="small-button danger" id="clearBtn">Clear local data</button></div></div>
+  <div class="admin-card"><h2>Important setup note</h2><p style="color:#68758d;font-size:13px;margin-bottom:0">This HTML/CSS/JavaScript version uses browser-local storage, so it only shows inquiries saved in the same browser and device. The WhatsApp form opens a prepared message for the parent/student to send. To collect every inquiry centrally from Facebook visitors, connect a shared backend or a form service; static files alone cannot sync a database across devices.</p></div>
+  <div class="admin-card"><h2 id="count">0 inquiries</h2><div id="tableArea"></div></div>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>

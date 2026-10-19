@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Admission inquiry for GCA Coaching Center, Marangpalli. Classes 1 to 12.">
+  <title>Admission Inquiry | GCA Coaching Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="GCA Coaching Center home">
+      <span class="brand-mark">GCA</span>
+      <span><strong>GCA COACHING CENTER</strong><small>MARANGPALLI · CLASSES 1–12</small></span>
+    </a>
+    <a class="call-link" href="tel:8280897689">Call: 8280897689</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">ADMISSIONS OPEN</span>
+        <h1>Your Success.<br><em>Our Mission.</em></h1>
+        <p>Build strong concepts, gain confidence, and prepare for a brighter future with GCA Coaching Center.</p>
+        <div class="hero-points">
+          <span>✓ Classes 1st to 12th</span>
+          <span>✓ Concept-based learning</span>
+          <span>✓ Regular practice & tests</span>
+        </div>
+        <a class="button button-light" href="#inquiry">Enquire for Admission <span>→</span></a>
+      </div>
+      <div class="hero-card">
+        <div class="book-icon">✦</div>
+        <p class="card-kicker">TAKE THE FIRST STEP</p>
+        <h2>Start your learning journey today.</h2>
+        <p>Submit the short inquiry form and contact our center on WhatsApp.</p>
+        <div class="card-bottom"><span class="pulse"></span> Admissions inquiry available</div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <section class="form-panel" id="inquiry">
+        <div class="section-heading">
+          <span class="eyebrow blue">STUDENT ENQUIRY</span>
+          <h2>Admission Inquiry Form</h2>
+          <p>Fill in the details below. Required fields are marked with *.</p>
+        </div>
+        <form id="inquiryForm">
+          <div class="field-row">
+            <label>Student full name *<input name="studentName" required maxlength="100" placeholder="Enter student's name"></label>
+            <label>Parent / guardian name *<input name="parentName" required maxlength="100" placeholder="Enter parent/guardian name"></label>
+          </div>
+          <div class="field-row">
+            <label>Mobile number *<input name="mobile" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" required placeholder="10-digit mobile number"></label>
+            <label>Class applying for *
+              <select name="className" required>
+                <option value="">Select class</option>
+                <option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option>
+                <option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option>
+                <option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option>
+              </select>
+            </label>
+          </div>
+          <div class="field-row">
+            <label>Preferred subject / stream
+              <select name="subject">
+                <option value="All subjects / guidance">All subjects / guidance</option>
+                <option>Mathematics</option><option>Science</option><option>English</option><option>Odia</option>
+                <option>Social Science</option><option>Class 11–12 Science</option><option>Other</option>
+              </select>
+            </label>
+            <label>Village / address<input name="address" maxlength="200" placeholder="Enter village or address"></label>
+          </div>
+          <label>Message (optional)<textarea name="message" rows="3" maxlength="500" placeholder="Any question about admission or classes?"></textarea></label>
+          <label class="consent"><input type="checkbox" required> I agree that GCA Coaching Center may contact me about this inquiry.</label>
+          <button class="button button-primary submit-button" type="submit">Submit Inquiry & Continue to WhatsApp <span>→</span></button>
+          <p class="form-note">When you submit, WhatsApp opens with your inquiry details ready to send to the center. Please press <strong>Send</strong> in WhatsApp to deliver it.</p>
+          <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <aside class="info-panel">
+        <div class="info-top">
+          <span class="eyebrow">VISIT OUR CENTER</span>
+          <h2>Learn with confidence.</h2>
+          <p>We welcome student and parent inquiries for Classes 1 to 12.</p>
+        </div>
+        <div class="info-item"><span class="info-icon">⌂</span><div><strong>Center address</strong><p>Marangpalli, P.O. Ganjpara, P.S. Raighar, Nabarangpur, Odisha – 764074</p></div></div>
+        <div class="info-item"><span class="info-icon">☎</span><div><strong>Call / WhatsApp</strong><p>8280897689</p><a href="https://wa.me/918280897689" target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div></div>
+        <div class="info-item"><span class="info-icon">▣</span><div><strong>Classes</strong><p>Class 1 to Class 12</p></div></div>
+        <div class="whatsapp-box">
+          <div class="wa-logo">◉</div>
+          <div><strong>Have a quick question?</strong><p>Message the center directly on WhatsApp.</p><a href="https://wa.me/918280897689?text=Namaste%20GCA%20Coaching%20Center%2C%20I%20want%20to%20ask%20about%20admission." target="_blank" rel="noopener">Open WhatsApp →</a></div>
+        </div>
+      </aside>
+    </section>
+    <section class="bottom-cta"><div><span class="eyebrow">GCA COACHING CENTER · MARANGPALLI</span><h2>Learn Today. Lead Tomorrow.</h2></div><a class="button button-light" href="#inquiry">Enquire Now →</a></section>
+  </main>
+
+  <footer><span>© <span id="year"></span> GCA Coaching Center, Marangpalli</span><span>Education • Practice • Progress</span><a href="admin.html">Admin access</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
